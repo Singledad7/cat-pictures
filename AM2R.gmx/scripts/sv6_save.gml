@@ -14,16 +14,12 @@ save_str[8] = sv6_randomizer();
 save_str[9] = sv6_add_trooper_logs();
 save_str[10] = sv6_add_seed(); //Added 1.4.3
 filename = argument0;
-fid = file_text_open_write(filename);
-file_text_write_string(fid, rc4("[AM2R SaveData V7.0]", "HEADER_KEY"));
-file_text_writeln(fid);
+var _str = rc4("[AM2R SaveData V7.0]", "HEADER_KEY") + global.crlf;
 i = 0;
-repeat (10) {
-    file_text_write_string(fid, base64_encode(save_str[i]));
-    file_text_writeln(fid);
+repeat (11) {
+    _str += base64_encode(save_str[i]);
+    _str += global.crlf;
     i += 1;
 }
-file_text_write_string(fid, base64_encode(save_str[i]));
-file_text_writeln(fid);
-file_text_close(fid);
-if (os_is_native) crypt(filename, "XOR_DFJykQ8xX3PuNnkLt6QviqALOLF8cxIDx1D63DAdph4KGQ4rOJ7", 2);
+nik_raw_setfile(filename, _str);
+savedata_flush();

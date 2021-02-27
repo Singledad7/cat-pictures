@@ -32,7 +32,7 @@ sound_id = 0;
 
 useMultistageMusic = 0;
 
-if (file_exists("musQueenbreak.ogg") and file_exists("musQueen2.ogg") and file_exists("musQueen3.ogg")) {
+if (is_musqueen_present()) {
     useMultistageMusic = 1;
 }
 </string>
@@ -80,7 +80,7 @@ if (file_exists("musQueenbreak.ogg") and file_exists("musQueen2.ogg") and file_e
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (file_exists("musItemAmb2.ogg")) {
+            <string>if (is_musitemamb2_present()) {
     if(oMusicV2.currentbgm != musItemAmb2 &amp;&amp; oMusicV2.bossbgm == sndJump) mus_stop_muted();
 } else if (oMusicV2.bossbgm == sndJump) mus_stop_muted();
 </string>

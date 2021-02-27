@@ -28,14 +28,6 @@ oControl.mod_header[7, 4] = 17;
 oControl.mod_header[8, 3] = 15;
 oControl.mod_header[8, 4] = 17;
 
-/*
-var lin = "";
-
-if (os_type == os_linux) {
-    lin = "/assets";
-}
-*/
-
 if(os_type == os_android) exit; // "Safety Check" on Android
 
 //Area Headers
@@ -112,166 +104,147 @@ file_find_close();
 
 
 // ***Suit palettes***
-oControl.PowerPalette = -1;
-oControl.VariaPalette = -1;
-oControl.GravityPalette = -1;
-
-if (file_exists("mods/palettes/suits/power.png")) oControl.PowerPalette = sprite_add("mods/palettes/suits/power.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/suits/varia.png")) oControl.VariaPalette = sprite_add("mods/palettes/suits/varia.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/suits/gravity.png")) oControl.GravityPalette = sprite_add("mods/palettes/suits/gravity.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/suits/fusion_power.png")) sprite_replace(sPalFusion0, "mods/palettes/suits/fusion_power.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/suits/fusion_varia.png")) sprite_replace(sPalFusion1, "mods/palettes/suits/fusion_varia.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/suits/fusion_gravity.png")) sprite_replace(sPalFusion2, "mods/palettes/suits/fusion_gravity.png", 1, false, false, 0, 0);
+oControl.PowerPalette = sprite_add("mods/palettes/suits/power.png", 1, false, false, 0, 0);
+oControl.VariaPalette = sprite_add("mods/palettes/suits/varia.png", 1, false, false, 0, 0);
+oControl.GravityPalette = sprite_add("mods/palettes/suits/gravity.png", 1, false, false, 0, 0);
+sprite_replace(sPalFusion0, "mods/palettes/suits/fusion_power.png", 1, false, false, 0, 0);
+sprite_replace(sPalFusion1, "mods/palettes/suits/fusion_varia.png", 1, false, false, 0, 0);
+sprite_replace(sPalFusion2, "mods/palettes/suits/fusion_gravity.png", 1, false, false, 0, 0);
 
 
 // Space jump trails
-if (file_exists("mods/palettes/suits/SpaceJumpTrails/power.png")) sprite_replace(sSpaceJumpTrail, "mods/palettes/suits/SpaceJumpTrails/power.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrail), sprite_get_yoffset(sSpaceJumpTrail));
-if (file_exists("mods/palettes/suits/SpaceJumpTrails/varia.png")) sprite_replace(sSpaceJumpTrailVaria, "mods/palettes/suits/SpaceJumpTrails/varia.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailVaria), sprite_get_yoffset(sSpaceJumpTrailVaria));
-if (file_exists("mods/palettes/suits/SpaceJumpTrails/gravity.png")) sprite_replace(sSpaceJumpTrailGravity, "mods/palettes/suits/SpaceJumpTrails/gravity.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailGravity), sprite_get_yoffset(sSpaceJumpTrailGravity));
-if (file_exists("mods/palettes/suits/SpaceJumpTrails/fusion_power.png")) sprite_replace(sSpaceJumpTrail_fusion, "mods/palettes/suits/SpaceJumpTrails/fusion_power.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrail_fusion), sprite_get_yoffset(sSpaceJumpTrail_fusion));
-if (file_exists("mods/palettes/suits/SpaceJumpTrails/fusion_varia.png")) sprite_replace(sSpaceJumpTrailVaria_fusion, "mods/palettes/suits/SpaceJumpTrails/fusion_varia.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailVaria_fusion), sprite_get_yoffset(sSpaceJumpTrailVaria_fusion));
-if (file_exists("mods/palettes/suits/SpaceJumpTrails/fusion_gravity.png")) sprite_replace(sSpaceJumpTrailGravity_fusion, "mods/palettes/suits/SpaceJumpTrails/fusion_gravity.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailGravity_fusion), sprite_get_yoffset(sSpaceJumpTrailGravity_fusion));
+sprite_replace(sSpaceJumpTrail, "mods/palettes/suits/SpaceJumpTrails/power.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrail), sprite_get_yoffset(sSpaceJumpTrail));
+sprite_replace(sSpaceJumpTrailVaria, "mods/palettes/suits/SpaceJumpTrails/varia.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailVaria), sprite_get_yoffset(sSpaceJumpTrailVaria));
+sprite_replace(sSpaceJumpTrailGravity, "mods/palettes/suits/SpaceJumpTrails/gravity.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailGravity), sprite_get_yoffset(sSpaceJumpTrailGravity));
+sprite_replace(sSpaceJumpTrail_fusion, "mods/palettes/suits/SpaceJumpTrails/fusion_power.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrail_fusion), sprite_get_yoffset(sSpaceJumpTrail_fusion));
+sprite_replace(sSpaceJumpTrailVaria_fusion, "mods/palettes/suits/SpaceJumpTrails/fusion_varia.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailVaria_fusion), sprite_get_yoffset(sSpaceJumpTrailVaria_fusion));
+sprite_replace(sSpaceJumpTrailGravity_fusion, "mods/palettes/suits/SpaceJumpTrails/fusion_gravity.png", 1, false, false, sprite_get_xoffset(sSpaceJumpTrailGravity_fusion), sprite_get_yoffset(sSpaceJumpTrailGravity_fusion));
 
 // Spiderball glows
-if (file_exists("mods/palettes/suits/SpiderBallGlow/power.png")) sprite_replace(sSpiderballFX, "mods/palettes/suits/SpiderBallGlow/power.png", 1, false, false, sprite_get_xoffset(sSpiderballFX), sprite_get_yoffset(sSpiderballFX));
-if (file_exists("mods/palettes/suits/SpiderBallGlow/varia.png")) sprite_replace(sSpiderballFXVaria, "mods/palettes/suits/SpiderBallGlow/varia.png", 1, false, false, sprite_get_xoffset(sSpiderballFXVaria), sprite_get_yoffset(sSpiderballFXVaria));
-if (file_exists("mods/palettes/suits/SpiderBallGlow/gravity.png")) sprite_replace(sSpiderballFXGravity, "mods/palettes/suits/SpiderBallGlow/gravity.png", 1, false, false, sprite_get_xoffset(sSpiderballFXGravity), sprite_get_yoffset(sSpiderballFXGravity));
-if (file_exists("mods/palettes/suits/SpiderBallGlow/fusion_power.png")) sprite_replace(sSpiderballFX_fusion, "mods/palettes/suits/SpiderBallGlow/fusion_power.png", 1, false, false, sprite_get_xoffset(sSpiderballFX_fusion), sprite_get_yoffset(sSpiderballFX_fusion));
-if (file_exists("mods/palettes/suits/SpiderBallGlow/fusion_varia.png")) sprite_replace(sSpiderballFXVaria_fusion, "mods/palettes/suits/SpiderBallGlow/fusion_varia.png", 1, false, false, sprite_get_xoffset(sSpiderballFXVaria_fusion), sprite_get_yoffset(sSpiderballFXVaria_fusion));
-if (file_exists("mods/palettes/suits/SpiderBallGlow/fusion_gravity.png")) sprite_replace(sSpiderballFXGravity_fusion, "mods/palettes/suits/SpiderBallGlow/fusion_gravity.png", 1, false, false, sprite_get_xoffset(sSpiderballFXGravity_fusion), sprite_get_yoffset(sSpiderballFXGravity_fusion));
+sprite_replace(sSpiderballFX, "mods/palettes/suits/SpiderBallGlow/power.png", 1, false, false, sprite_get_xoffset(sSpiderballFX), sprite_get_yoffset(sSpiderballFX));
+sprite_replace(sSpiderballFXVaria, "mods/palettes/suits/SpiderBallGlow/varia.png", 1, false, false, sprite_get_xoffset(sSpiderballFXVaria), sprite_get_yoffset(sSpiderballFXVaria));
+sprite_replace(sSpiderballFXGravity, "mods/palettes/suits/SpiderBallGlow/gravity.png", 1, false, false, sprite_get_xoffset(sSpiderballFXGravity), sprite_get_yoffset(sSpiderballFXGravity));
+sprite_replace(sSpiderballFX_fusion, "mods/palettes/suits/SpiderBallGlow/fusion_power.png", 1, false, false, sprite_get_xoffset(sSpiderballFX_fusion), sprite_get_yoffset(sSpiderballFX_fusion));
+sprite_replace(sSpiderballFXVaria_fusion, "mods/palettes/suits/SpiderBallGlow/fusion_varia.png", 1, false, false, sprite_get_xoffset(sSpiderballFXVaria_fusion), sprite_get_yoffset(sSpiderballFXVaria_fusion));
+sprite_replace(sSpiderballFXGravity_fusion, "mods/palettes/suits/SpiderBallGlow/fusion_gravity.png", 1, false, false, sprite_get_xoffset(sSpiderballFXGravity_fusion), sprite_get_yoffset(sSpiderballFXGravity_fusion));
 
 // Morph trail colors
-var surf = -1,
+var surf = surface_create(4, 4),
     color = -1,
-    col;
-    
-if (!surface_exists(surf)) {
-    surf = surface_create(4, 4);
-}
+    col = c_black;
 
 surface_set_target(surf);
 
-if (file_exists("mods/palettes/suits/MorphTrailColors/power.png")) {
-    color = sprite_add("mods/palettes/suits/MorphTrailColors/power.png", 1, false, false, 0, 0);
-    draw_clear_alpha(c_black, 0);
+color = sprite_add("mods/palettes/suits/MorphTrailColors/power.png", 1, false, false, 0, 0);
+if (sprite_exists(color)) {
     draw_sprite(color, 0, 0, 0);
     
-    col = surface_getpixel_ext(surf, 0, 0);
-    Trail_P_R = col & 255;
-    Trail_P_G = (col >> 8) & 255;
-    Trail_P_B = (col >> 16) & 255;
+    col = surface_getpixel(surf, 0, 0);
+    Trail_P_R = color_get_red(col);
+    Trail_P_G = color_get_green(col);
+    Trail_P_B = color_get_blue(col);
+    sprite_delete(color);
 }
 
-if (file_exists("mods/palettes/suits/MorphTrailColors/varia.png")) {
-    color = sprite_add("mods/palettes/suits/MorphTrailColors/varia.png", 1, false, false, 0, 0);
-    draw_clear_alpha(c_black, 0);
+color = sprite_add("mods/palettes/suits/MorphTrailColors/varia.png", 1, false, false, 0, 0);
+if (sprite_exists(color)) {
     draw_sprite(color, 0, 0, 0);
     
-    col = surface_getpixel_ext(surf, 0, 0);
-    Trail_V_R = col & 255;
-    Trail_V_G = (col >> 8) & 255;
-    Trail_V_B = (col >> 16) & 255;
+    col = surface_getpixel(surf, 0, 0);
+    Trail_V_R = color_get_red(col);
+    Trail_V_G = color_get_green(col);
+    Trail_V_B = color_get_blue(col);
+    sprite_delete(color);
 }
 
-if (file_exists("mods/palettes/suits/MorphTrailColors/gravity.png")) {
-    color = sprite_add("mods/palettes/suits/MorphTrailColors/gravity.png", 1, false, false, 0, 0);
-    draw_clear_alpha(c_black, 0);
+color = sprite_add("mods/palettes/suits/MorphTrailColors/gravity.png", 1, false, false, 0, 0);
+if (sprite_exists(color)) {
     draw_sprite(color, 0, 0, 0);
     
-    col = surface_getpixel_ext(surf, 0, 0);
-    Trail_G_R = col & 255;
-    Trail_G_G = (col >> 8) & 255;
-    Trail_G_B = (col >> 16) & 255;
+    col = surface_getpixel(surf, 0, 0);
+    Trail_G_R = color_get_red(col);
+    Trail_G_G = color_get_green(col);
+    Trail_G_B = color_get_blue(col);
+    sprite_delete(color);
 }
 
-if (file_exists("mods/palettes/suits/MorphTrailColors/fusion_power.png")) {
-    color = sprite_add("mods/palettes/suits/MorphTrailColors/fusion_power.png", 1, false, false, 0, 0);
-    draw_clear_alpha(c_black, 0);
+color = sprite_add("mods/palettes/suits/MorphTrailColors/fusion_power.png", 1, false, false, 0, 0);
+if (sprite_exists(color)) {
     draw_sprite(color, 0, 0, 0);
     
-    col = surface_getpixel_ext(surf, 0, 0);
-    Trail_P_R_F = col & 255;
-    Trail_P_G_F = (col >> 8) & 255;
-    Trail_P_B_F = (col >> 16) & 255;
+    col = surface_getpixel(surf, 0, 0);
+    Trail_P_R_F = color_get_red(col);
+    Trail_P_G_F = color_get_green(col);
+    Trail_P_B_F = color_get_blue(col);
+    sprite_delete(color);
 }
 
-if (file_exists("mods/palettes/suits/MorphTrailColors/fusion_varia.png")) {
-    color = sprite_add("mods/palettes/suits/MorphTrailColors/fusion_varia.png", 1, false, false, 0, 0);
-    draw_clear_alpha(c_black, 0);
+color = sprite_add("mods/palettes/suits/MorphTrailColors/fusion_varia.png", 1, false, false, 0, 0);
+if (sprite_exists(color)) {
     draw_sprite(color, 0, 0, 0);
     
-    col = surface_getpixel_ext(surf, 0, 0);
-    Trail_V_R_F = col & 255;
-    Trail_V_G_F = (col >> 8) & 255;
-    Trail_V_B_F = (col >> 16) & 255;
+    col = surface_getpixel(surf, 0, 0);
+    Trail_V_R_F = color_get_red(col);
+    Trail_V_G_F = color_get_green(col);
+    Trail_V_B_F = color_get_blue(col);
+    sprite_delete(color);
 }
 
-if (file_exists("mods/palettes/suits/MorphTrailColors/fusion_gravity.png")) {
-    color = sprite_add("mods/palettes/suits/MorphTrailColors/fusion_gravity.png", 1, false, false, 0, 0);
-    draw_clear_alpha(c_black, 0);
+color = sprite_add("mods/palettes/suits/MorphTrailColors/fusion_gravity.png", 1, false, false, 0, 0);
+if (sprite_exists(color)) {
     draw_sprite(color, 0, 0, 0);
     
-    col = surface_getpixel_ext(surf, 0, 0);
-    Trail_G_R_F = col & 255;
-    Trail_G_G_F = (col >> 8) & 255;
-    Trail_G_B_F = (col >> 16) & 255;
+    col = surface_getpixel(surf, 0, 0);
+    Trail_G_R_F = color_get_red(col);
+    Trail_G_G_F = color_get_green(col);
+    Trail_G_B_F = color_get_blue(col);
+    sprite_delete(color);
 }
 
 
-draw_clear_alpha(c_black, 0);
+
 draw_sprite(sMorphTrailPower_msr, 0, 0, 0);
 
-col = surface_getpixel_ext(surf, 0, 0);
-Trail_P_R_F_SR = col & 255;
-Trail_P_G_F_SR = (col >> 8) & 255;
-Trail_P_B_F_SR = (col >> 16) & 255;
+col = surface_getpixel(surf, 0, 0);
+Trail_P_R_F_SR = color_get_red(col);
+Trail_P_G_F_SR = color_get_green(col);
+Trail_P_B_F_SR = color_get_blue(col);
 
 
-draw_clear_alpha(c_black, 0);
+
 draw_sprite(sMorphTrailVaria_msr, 0, 0, 0);
 
-col = surface_getpixel_ext(surf, 0, 0);
-Trail_V_R_F_SR = col & 255;
-Trail_V_G_F_SR = (col >> 8) & 255;
-Trail_V_B_F_SR = (col >> 16) & 255;
+col = surface_getpixel(surf, 0, 0);
+Trail_V_R_F_SR = color_get_red(col);
+Trail_V_G_F_SR = color_get_green(col);
+Trail_V_B_F_SR = color_get_blue(col);
 
 
-draw_clear_alpha(c_black, 0);
+
 draw_sprite(sMorphTrailGravity_msr, 0, 0, 0);
 
-col = surface_getpixel_ext(surf, 0, 0);
-Trail_G_R_F_SR = col & 255;
-Trail_G_G_F_SR = (col >> 8) & 255;
-Trail_G_B_F_SR = (col >> 16) & 255;
+col = surface_getpixel(surf, 0, 0);
+Trail_G_R_F_SR = color_get_red(col);
+Trail_G_G_F_SR = color_get_green(col);
+Trail_G_B_F_SR = color_get_blue(col);
 
 
 surface_reset_target();
 surface_free(surf);
-sprite_delete(color);
 
 
 
 // Monster palettes
-ini_open("mods/palettes/monsters/config.ini");
+ini_open_from_string(oStartupControl.palettesm);
 MonsterPalettesFusionOnly = ini_read_real('PaletteMode', 'FusionOnly', 1);
-ini_close();
+oStartupControl.palettesm = ini_close();
 
-AlphaPalette = -1;
-GammaPalette = -1;
-ZetaPalette = -1;
-OmegaPalette = -1;
-QueenPalette = -1;
-ZetaBlur = -1;
-QueenDead = -1;
-QueenBloodDrop = -1;
-QueenBloodParticle = -1;
-
-if (file_exists("mods/palettes/monsters/alpha.png")) AlphaPalette = sprite_add("mods/palettes/monsters/alpha.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/monsters/gamma.png")) GammaPalette = sprite_add("mods/palettes/monsters/gamma.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/monsters/zeta.png")) ZetaPalette  = sprite_add("mods/palettes/monsters/zeta.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/monsters/omega.png")) OmegaPalette = sprite_add("mods/palettes/monsters/omega.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/monsters/queen.png")) QueenPalette = sprite_add("mods/palettes/monsters/queen.png", 1, false, false, 0, 0);
-if (file_exists("mods/palettes/monsters/zeta_blur.png")) ZetaBlur = sprite_add("mods/palettes/monsters/zeta_blur.png", 1, false, false, sprite_get_xoffset(sMZetaBlur), sprite_get_yoffset(sMZetaBlur));
-if (file_exists("mods/palettes/monsters/queen_dead.png")) QueenDead = background_add("mods/palettes/monsters/queen_dead.png", false, false);
-if (file_exists("mods/palettes/monsters/queen_blood_drop.png")) QueenBloodDrop = sprite_add("mods/palettes/monsters/queen_blood_drop.png", sprite_get_number(sQueenBloodDrop), false, false, sprite_get_xoffset(sQueenBloodDrop), sprite_get_yoffset(sQueenBloodDrop));
-if (file_exists("mods/palettes/monsters/queen_blood_particle.png")) QueenBloodParticle = sprite_add("mods/palettes/monsters/queen_blood_particle.png", sprite_get_number(sQueenBloodParticle), false, false, sprite_get_xoffset(sQueenBloodParticle), sprite_get_yoffset(sQueenBloodParticle));
+AlphaPalette = sprite_add("mods/palettes/metroids/alpha.png", 1, false, false, 0, 0);
+GammaPalette = sprite_add("mods/palettes/metroids/gamma.png", 1, false, false, 0, 0);
+ZetaPalette  = sprite_add("mods/palettes/metroids/zeta.png", 1, false, false, 0, 0);
+OmegaPalette = sprite_add("mods/palettes/metroids/omega.png", 1, false, false, 0, 0);
+QueenPalette = sprite_add("mods/palettes/metroids/queen.png", 1, false, false, 0, 0);
+ZetaBlur = sprite_add("mods/palettes/metroids/zeta_blur.png", 1, false, false, sprite_get_xoffset(sMZetaBlur), sprite_get_yoffset(sMZetaBlur));
+QueenDead = background_add("mods/palettes/metroids/queen_dead.png", false, false);
+QueenBloodDrop = sprite_add("mods/palettes/metroids/queen_blood_drop.png", sprite_get_number(sQueenBloodDrop), false, false, sprite_get_xoffset(sQueenBloodDrop), sprite_get_yoffset(sQueenBloodDrop));
+QueenBloodParticle = sprite_add("mods/palettes/metroids/queen_blood_particle.png", sprite_get_number(sQueenBloodParticle), false, false, sprite_get_xoffset(sQueenBloodParticle), sprite_get_yoffset(sQueenBloodParticle));

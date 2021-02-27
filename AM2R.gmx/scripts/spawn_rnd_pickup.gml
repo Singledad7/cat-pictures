@@ -1,6 +1,6 @@
 /// spawn_rnd_pickup(chance)
 if (random(100) < argument0) {
-    if(canbeX == 1) xParasite = "What, you expected something useful?";
+    if(canbeX == 1) xParasite = noone;
     
     var xx = mean(bbox_left, bbox_right),
         yy = mean(bbox_top, bbox_bottom);

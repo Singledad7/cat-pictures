@@ -1,5 +1,5 @@
 /// save_gameoptions()
-ini_open("config.ini");
+ini_open_from_string(oStartupControl.configsav);
 ini_write_real("Screen", "Fullscreen", global.opfullscreen);
 ini_write_real("Screen", "Scale", global.opscale);
 ini_write_real("Screen", "VSync", global.opvsync);
@@ -104,4 +104,5 @@ ini_write_real("GameplayMenu", "InsanityMode", oControl.mod_insanitymode);
 // Remember setting
 ini_write_real("Extras", "MapItemsCollected", oControl.mod_collecteditemsmap);
 
-ini_close();
+oStartupControl.configsav = ini_close();
+savedata_flush();

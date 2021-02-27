@@ -1,6 +1,6 @@
 /// load_gameoptions()
 
-global.opfullscreen = 0; // originally 1
+global.opfullscreen = 1; // originally 1
 global.opscale = 0;
 global.opvsync = 0;
 global.opshowhud = 1;
@@ -33,10 +33,10 @@ oControl.mod_collecteditemsmap = 0;
 set_default_keys();
 set_default_joypad();
 set_default_xjoypad();
-if (!file_exists("config.ini")) save_gameoptions();
-if (file_exists("config.ini")) {
-    ini_open("config.ini");
-    global.opfullscreen = ini_read_real("Screen", "Fullscreen", 0);
+if (string_length(oStartupControl.configsav) == 0) save_gameoptions();
+if (string_length(oStartupControl.configsav) >= 2) {
+    ini_open_from_string(oStartupControl.configsav);
+    global.opfullscreen = ini_read_real("Screen", "Fullscreen", 1);
     global.opscale = ini_read_real("Screen", "Scale", 0);
     global.opvsync = ini_read_real("Screen", "VSync", 0);
     global.currentlanguage = ini_read_real("Screen", "Language", 0);
@@ -164,17 +164,12 @@ if (file_exists("config.ini")) {
         oControl.mod_septoggs_hijump_easy = 0;
     }
     
-    ini_close();
+    // RandomizerSeed
+    oControl.mod_usemanualseed = mod_changes(ini_read_real('RandomizerSeed', 'UseManualSeed', 0), 0);
+    oControl.mod_seed = ini_read_real('RandomizerSeed', 'Seed', 0);
+    
+    oStartupControl.configsav = ini_close();
 } // if (file_exists("config.ini"))
 apply_screenres();
-if (joystick_exists(global.opjoyid)) {
-    if (global.opjoybtn_xax >= 4 && joystick_axes(global.opjoyid) < 4) global.opjoybtn_xax = 0;
-    if (global.opjoybtn_xax >= 2 && joystick_axes(global.opjoyid) < 2) global.opjoybtn_xax = 0;
-    if (global.opjoybtn_yax >= 4 && joystick_axes(global.opjoyid) < 4) global.opjoybtn_yax = 1;
-    if (global.opjoybtn_yax >= 2 && joystick_axes(global.opjoyid) < 2) global.opjoybtn_yax = 1;
-    if (global.opjoybtn_xax >= 6 && joystick_has_pov(global.opjoyid) == 0) global.opjoybtn_xax = 0;
-    if (global.opjoybtn_yax >= 6 && joystick_has_pov(global.opjoyid) == 0) global.opjoybtn_yax = 1;
-}
-
 
 

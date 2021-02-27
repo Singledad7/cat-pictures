@@ -29,7 +29,7 @@ if (audio_is_playing(musArea5A)) audio_stop_sound(musArea5A);
 if (audio_is_playing(musArea5B)) audio_stop_sound(musArea5B);
 if (audio_is_playing(musEris)) audio_stop_sound(musEris);
 if (audio_is_playing(musItemAmb)) audio_stop_sound(musItemAmb);
-if (file_exists("musItemAmb2.ogg")) {
+if (is_musitemamb2_present()) {
     if (audio_is_playing(musItemAmb2)) audio_stop_sound(musItemAmb2);
 }
 if (audio_is_playing(musOmegaFight)) audio_stop_sound(musOmegaFight);

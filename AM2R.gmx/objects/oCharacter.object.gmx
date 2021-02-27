@@ -615,69 +615,6 @@ xGlow = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="36">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-if (file_exists(working_directory + "\cheats\godemode"))
-{
-    if (global.godmode == 0) { global.godmode = 1; }
-    else global.godmode = 0
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="34">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-if (file_exists(working_directory + "\cheats\fusion"))
-{
-    if (oControl.mod_fusion == 1) oControl.mod_fusion = 0;
-    else oControl.mod_fusion = 1;
-}
-
-
-
-/*if (file_exists(working_directory + "\cheats\itemprintout")) scr_ini_write();
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="9" enumb="33">
       <action>
         <libid>1</libid>

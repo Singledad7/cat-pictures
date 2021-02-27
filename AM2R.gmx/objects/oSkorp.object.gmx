@@ -48,7 +48,7 @@ dir = 24;
 
 disc1 = instance_create(x + lengthdir_x(len, image_angle + dir), y + lengthdir_y(len, image_angle + dir), oSkorpDisc);
 disc2 = instance_create(x + lengthdir_x(len, image_angle - dir), y + lengthdir_y(len, image_angle - dir), oSkorpDisc);
-lure = "OPTIMIZE *THIS*";
+lure = noone;
 
 disc2.image_xscale = -1;
 spin = 0;

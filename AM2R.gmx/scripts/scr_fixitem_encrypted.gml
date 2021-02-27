@@ -1,6 +1,5 @@
 /// scr_fixitem_encrypted(original_item, item_location)
-if (file_exists(working_directory + "\swap.ini")) file_delete(working_directory + "\swap.ini");
-ini_open(working_directory + "\swap.ini");
+ini_open_from_string("");
 
 ini_write_real('Items', string(oControl.mod_plasma), 14);
 ini_write_real('Items', string(oControl.mod_spazer), 13);
@@ -95,14 +94,11 @@ ini_write_real('Items', string(oControl.mod_258), 258);
 ini_write_real('Items', string(oControl.mod_301), 301);
 ini_write_real('Items', string(oControl.mod_302), 302);
 
-ini_close();
-ini_open(working_directory + "\swap.ini");
-
 var can_return = false;
 if (ini_read_real('Items', string(argument0), argument0) == argument0) { can_return = true; }
 if (can_return) { ini_close(); return argument0; }
 
-var swap_location = ini_read_real('Items', string(argument0), argument0)
+var swap_location = ini_read_real('Items', string(argument0), argument0);
 var swap_item = 1;
 //Powerups
 if (ini_read_real('Items', '0', 0) == argument1) { swap_item = 0; }
@@ -198,7 +194,6 @@ if (ini_read_real('Items', '301', 301) == argument1) { swap_item = 301; }
 if (ini_read_real('Items', '302', 302) == argument1) { swap_item = 302; }
 
 ini_close();
-if (file_exists(working_directory + "\swap.ini")) file_delete(working_directory + "\swap.ini");
 if (swap_item == 1) {  return argument0; }
 
 scr_fixitem_switch(argument1, argument0);

@@ -1,4 +1,4 @@
-if (file_exists("musItemAmb2.ogg")) {
+if (is_musitemamb2_present()) {
     audio_sound_gain(oMusicV2.currentbgm, 0, 250);
     oMusicV2.alarm[8] = 15;
     oMusicV2.previousbgm = oMusicV2.currentbgm;

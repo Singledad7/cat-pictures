@@ -27,6 +27,6 @@ if (audio_is_playing(musArea5A) && currentbgm != musArea5A) audio_stop_sound(mus
 if (audio_is_playing(musArea5B) && currentbgm != musArea5B) audio_stop_sound(musArea5B);
 if (audio_is_playing(musEris) && currentbgm != musEris) audio_stop_sound(musEris);
 if (audio_is_playing(musItemAmb) && currentbgm != musItemAmb) audio_stop_sound(musItemAmb);
-if (file_exists("musItemAmb2.ogg")) {
+if (is_musitemamb2_present()) {
     if (audio_is_playing(musItemAmb2) && currentbgm != musItemAmb2) audio_stop_sound(musItemAmb2);
 }

@@ -747,34 +747,6 @@ if (instance_exists(oCharacter) &amp;&amp; (keyboard_check(vk_shift))) {
     if (global.ingame) room_goto(targetroom);
 }
 
-// - Code for outputting sand maps to text file.
-/*
-fileSand = file_text_open_write(working_directory + "\fileSand.txt");
-
-sand_str = ds_map_write(global.sand_map);
-file_text_write_string(fileSand,sand_str);
-file_text_writeln(fileSand);
-sandcrn0_str = ds_map_write(global.sandcrn0_map);
-file_text_write_string(fileSand,sandcrn0_str);
-file_text_writeln(fileSand);
-sandcrn1_str = ds_map_write(global.sandcrn1_map);
-file_text_write_string(fileSand,sandcrn1_str);
-file_text_writeln(fileSand);
-sandcrn2_str = ds_map_write(global.sandcrn2_map);
-file_text_write_string(fileSand,sandcrn2_str);
-file_text_writeln(fileSand);
-sandcrn3_str = ds_map_write(global.sandcrn3_map);
-file_text_write_string(fileSand,sandcrn3_str);
-file_text_writeln(fileSand);
-//string(ds_map_find_value(global.sand_map,key));
-/*for(i = 0; i &lt; ds_map_size(global.sand_map); i ++) {
-    sand_str = sand_str + string(ds_map_find_value(global.sand_map,key_sand));
-    key_sand = ds_map_find_next(global.sand_map,key_sand);
-}
-
-file_text_close(fileSand);
-*/
-
 /*
 
 

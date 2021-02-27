@@ -225,9 +225,6 @@ if (oEris.boostphase == 1 || oEris.boostphase == 3 || oEris.boostphase == 5) {
         flashing = 10;
     }
 }
-/*if (order == 1) {
-    show_debug_message(string(x) + ", " + string(y));
-}
 </string>
           </argument>
         </arguments>

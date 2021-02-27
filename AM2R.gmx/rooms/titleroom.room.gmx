@@ -22,9 +22,7 @@ if (ds_map_exists(global.maprandom, "PureRandom")) {
 */
 
 scr_default_global_items();
-//scr_default_maprandom();
-
-if (file_exists(working_directory + "\swap.ini")) file_delete(working_directory + "\swap.ini");</code>
+//scr_default_maprandom();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>

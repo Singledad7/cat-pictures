@@ -1,7 +1,6 @@
-/// crypt(file, encryption_key)
+/// crypt(buffer, encryption_key, rate)
 // I might have messed up something (game id?) here because 
 // official and recompiled builds don't seem to be compatible.
-if (!file_exists(argument0)) return -1;
 var keypos = 0;
 var gmid = string(game_id);
 var key = "";
@@ -21,18 +20,18 @@ repeat (floor(string_length(string(game_id)) * 5)) {
 }
 epos -= 1;
 keypos = 0;
-file = file_bin_open(argument0, 2);
-file_bin_seek(file, 0);
-var filesize = file_bin_size(file);
+file = argument0;
+buffer_seek(file, buffer_seek_start, 0)
+var filesize = buffer_get_size(file);
 rate *= filesize / 10000;
 rate = round(rate);
 do {
-    read = file_bin_read_byte(file);
-    file_bin_seek(file, file_bin_position(file) - 1);
-    file_bin_write_byte(file, read ^ keys[keypos]);
+    read = buffer_read(file, buffer_u8);
+    buffer_seek(file, buffer_seek_relative, -1);
+    buffer_write(file, buffer_u8, read ^ keys[keypos]);
     keypos += 1;
     if (keypos > epos) keypos = 1;
-    if (rate) file_bin_seek(file, file_bin_position(file) + rate);
-} until (file_bin_position(file) >= filesize);
-file_bin_close(file);
+    if (rate) buffer_seek(file, buffer_seek_relative, rate);
+} until (buffer_tell(file) >= filesize);
+buffer_seek(file, buffer_seek_start, 0);
 return 1;

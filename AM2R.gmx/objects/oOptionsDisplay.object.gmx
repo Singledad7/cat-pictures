@@ -81,7 +81,7 @@ repeat (menuSize + 1) {
 // Get lang info
 langCount = array_length_1d(global.language);
 for (i = 0; i &lt; langCount; i += 1) {
-    ini_open(global.language[i]);
+    ini_open_from_string(global.language[i]);
     lang[i] = ini_read_string("Header", "Language", "[!]");
     langAuthor[i] = ini_read_string("Header", "Author", "[!]");
     langAuthor2[i] = ini_read_string("Header", "Author2", "[!]");

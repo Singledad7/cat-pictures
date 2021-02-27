@@ -99,7 +99,7 @@ if (oControl.mod_insanitymode) {
     }
     if (oControl.kMenu1 &amp;&amp; oControl.kMenu1PushedSteps == 0) {
         var t = file[targetslot];
-        if (!file_exists(file[targetslot])) {
+        if (!nik_file_exists(file[targetslot])) {
             event_user(0);
         } else {
             active = 0;

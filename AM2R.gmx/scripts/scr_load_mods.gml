@@ -1,4 +1,4 @@
-ini_open('modifiers.ini');
+ini_open_from_string(oStartupControl.modifiers);
 
 oControl.mod_backgroundframes = 60;
 oControl.mod_backgroundspeed = 8;
@@ -62,10 +62,6 @@ oControl.mod_screwattackrun = mod_changes_2(ini_read_real('RandomizerSettings', 
 oControl.mod_bombrun = mod_changes_2(ini_read_real('RandomizerSettings', 'BombRun', 1), 1);
 oControl.mod_powerbombrun = mod_changes_2(ini_read_real('RandomizerSettings', 'PowerBombsRun', 1), 1);
 oControl.mod_bombblocks = 0;
-
-// RandomizerSeed
-oControl.mod_usemanualseed = mod_changes(ini_read_real('RandomizerSeed', 'UseManualSeed', 0), 0);
-oControl.mod_seed = ini_read_real('RandomizerSeed', 'Seed', 0);
 
 // AlphaGamma
 global.mod_alphagammaH = mod_changes(ini_read_real('AlphaGamma', 'Health', 1), 1);

@@ -285,7 +285,7 @@ if (state == 0) {
         sfx_play(sndTesterBarrierUp);
     }
     if (statetime == 150) {
-        if(file_exists("musTester.ogg")) {
+        if(is_mustester_present()) {
             mus_play(musTester);
             oMusicV2.bossbgm = musTester;
         }

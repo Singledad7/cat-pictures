@@ -29,7 +29,7 @@ if (audio_is_playing(musArea5A) && audio_sound_get_gain(musArea5A) == 0) audio_s
 if (audio_is_playing(musArea5B) && audio_sound_get_gain(musArea5B) == 0) audio_stop_sound(musArea5B);
 if (audio_is_playing(musEris) && audio_sound_get_gain(musEris) == 0) audio_stop_sound(musEris);
 if (audio_is_playing(musItemAmb) && audio_sound_get_gain(musItemAmb) == 0) audio_stop_sound(musItemAmb);
-if (file_exists("musItemAmb2.ogg")) {
+if (is_musitemamb2_present()) {
     if (audio_is_playing(musItemAmb2) && audio_sound_get_gain(musItemAmb2) == 0) audio_stop_sound(musItemAmb2);
 }
 if (audio_is_playing(musOmegaFight) && audio_sound_get_gain(musOmegaFight) == 0) audio_stop_sound(musOmegaFight);
