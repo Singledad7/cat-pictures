@@ -1,2 +1,2 @@
 # cat-pictures
-there's nothing here, don't look.
+I told you. You didn't listen. That's your fault.
