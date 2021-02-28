@@ -1,0 +1,31 @@
+{
+    "id": "57258df9-5884-47a5-b9e2-c35758948620",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "57258df9-5884-47a5-b9e2-c35758948620",
+    "children": [
+        "e8c7c296-fd75-4f5b-8a31-87fdfacc99bd",
+        "c3654ac1-1175-46e5-b653-5950a5fef1d5",
+        "d9f1bf38-990d-48dd-a079-b4b268a54717",
+        "e04ba466-1322-429e-9a1f-6ea1de655951",
+        "83f92536-930e-4359-985a-e7a09c5512fc",
+        "9c4a5291-283b-47dd-bd05-db818848f19a",
+        "e2e4fa37-c9f3-492b-944f-f55d4349e1eb",
+        "bae3f432-0481-4fa3-afd7-deaac18dcc55",
+        "1d59c69e-b354-468e-aeae-9a5a93d00459",
+        "690970e4-fcc4-4f93-8d5c-543582f2a5e7",
+        "d75d36cd-b89b-496d-a9d0-942e7c643c73",
+        "57d70345-4b5a-4619-ada4-877141d07067",
+        "a3c09bd3-04dc-4f42-acfe-70d96f651b85",
+        "7067c733-3933-47e7-b377-1cbc158d1db3",
+        "3aa6efde-4d5c-4ede-a9bf-8f6a70cb4a40",
+        "75563420-a572-4fd7-9419-3fb575dfe374",
+        "5f470c16-a73d-47d5-b734-1fb1033478a0",
+        "8c46eb5f-73cc-45b7-b5bc-664d0027588e",
+        "c265b460-c55c-42a8-b060-8d3d4c0b5af4"
+    ],
+    "filterType": "GMObject",
+    "folderName": "A7",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

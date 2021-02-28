@@ -1,0 +1,2 @@
+
+regentime = 8;

@@ -1,0 +1,2 @@
+oEndingMonsterEgg.xTwitch = 1;
+

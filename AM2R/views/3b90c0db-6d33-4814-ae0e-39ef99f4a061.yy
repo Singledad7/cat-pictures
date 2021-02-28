@@ -1,0 +1,33 @@
+{
+    "id": "3b90c0db-6d33-4814-ae0e-39ef99f4a061",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "3b90c0db-6d33-4814-ae0e-39ef99f4a061",
+    "children": [
+        "833953f8-db30-4fa5-95c5-f7a1e8e05905",
+        "1ffe529b-f2fc-427b-9786-c1373e496475",
+        "854f5800-b1b5-4201-b4fc-0274efe79a46",
+        "d5da1e37-fe02-4028-80ac-dabcbbd21809",
+        "78f7c087-f647-4b1d-8c78-16efbfb6ab5f",
+        "f5957fdf-b709-4eba-9738-40910aa87542",
+        "7517c254-9c85-41d0-bf5b-8f06a36e9714",
+        "bb84be48-4366-44c4-a4ee-e0ee17e2a909",
+        "9bbefe63-8479-4234-9093-23c7354c6798",
+        "db67106f-75af-40b2-8d85-dda5f47e4deb",
+        "bd81f998-0608-44ad-9316-472904f22fba",
+        "e1995451-ca98-45ef-80a8-dfdc29fa681f",
+        "8f1252f1-e1a1-45b0-a82c-6b844a7037ea",
+        "013d6bcd-9243-4fb4-b1c7-7f0a4c2d2653",
+        "0936ec6f-ebe6-4485-995d-37afe626b7db",
+        "2a498f71-4a1c-434c-938d-4153c324de85",
+        "bd19e2ca-a8e2-49d3-9d45-2d71b5323178",
+        "32f53311-244e-4324-bbe4-d4d358db9f40",
+        "f71acf6d-cf18-4bf2-8123-79da3ddff883",
+        "9c180c7e-f364-4374-ad10-a62058cddbcd",
+        "871490a5-a45b-4925-886e-354bb8fb6795"
+    ],
+    "filterType": "GMObject",
+    "folderName": "Solids",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

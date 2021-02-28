@@ -1,0 +1,40 @@
+{
+    "id": "f687312c-d851-480d-b292-d7ae49259b9f",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "oLight64Red",
+    "eventList": [
+        {
+            "id": "c3e1920c-17f6-4a44-9c94-8b720f14f655",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "f687312c-d851-480d-b292-d7ae49259b9f"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "3e9860a1-2f97-4304-8fd2-3ba62cf68007",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": true,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 0,
+    "physicsShapePoints": [
+        
+    ],
+    "physicsStartAwake": true,
+    "properties": null,
+    "solid": false,
+    "spriteId": "70387ed1-77df-49ae-b59b-c40c89f050df",
+    "visible": false
+}

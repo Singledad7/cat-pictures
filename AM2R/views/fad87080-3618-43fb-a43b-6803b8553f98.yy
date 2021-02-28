@@ -1,0 +1,31 @@
+{
+    "id": "fad87080-3618-43fb-a43b-6803b8553f98",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "fad87080-3618-43fb-a43b-6803b8553f98",
+    "children": [
+        "08989b0f-6328-4aef-91d0-9cc345ea3fa4",
+        "81afa9f6-9b7b-436d-8ee2-80b96b7998b5",
+        "53c7b0b6-7a2c-4e18-a661-a13081dd3c5c",
+        "2fed99fe-c5ae-4fce-b423-958938d04beb",
+        "191eeaae-9e05-4bb4-9253-087da125e676",
+        "12de3dc0-8867-4774-93ab-846dbdf2c53b",
+        "462e29e5-adc6-43e7-b34e-0229a34ba15b",
+        "bb920412-c112-4fc9-ab66-ee4ad3ecb89a",
+        "a74e8970-a3fe-4dab-9805-025afbf30600",
+        "5c5637b6-7b1f-4e58-a498-9a2d2110d319",
+        "cec84194-1362-484e-8e5e-a7bc05022d07",
+        "6e822bf1-9545-489c-b29b-0d9226ca594a",
+        "5d732a49-4e8d-4a71-9985-4efb6e14aa7d",
+        "885c7606-a17b-487f-83ae-ad9fc72872ee",
+        "925f91e8-e447-4e84-98db-ec701b149095",
+        "a9101bb7-a977-4490-9552-869fa091f619",
+        "a01c7615-23b8-4c37-a78c-6abc1dfdaed7",
+        "74d3986d-4e5d-4a13-9e0a-c2a7ca964994",
+        "27e429e4-6cfe-4773-bace-ec2cb3f0198f"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "A4",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

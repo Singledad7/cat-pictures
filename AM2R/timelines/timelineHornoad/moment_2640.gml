@@ -1,0 +1,2 @@
+oEndingMonsterEgg.xBite = 1;
+

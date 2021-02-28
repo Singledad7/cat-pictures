@@ -1,0 +1,33 @@
+{
+    "id": "575a8839-6cff-4cc8-a519-b65197e9aa9a",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "575a8839-6cff-4cc8-a519-b65197e9aa9a",
+    "children": [
+        "3a7b479b-4aa1-413d-b46a-1365177f5110",
+        "5cc79ae3-d929-4b1b-8b94-b9f784555ce9",
+        "77f94d41-da2e-4f74-96f4-3c44f3d69ae0",
+        "63fd994e-8607-4085-bc7b-b41fa4c2abcb",
+        "4fdfb61e-64db-4ba3-bd40-8ad4f0497e49",
+        "579aeeb6-89bf-4035-8f3f-36939a84d536",
+        "89c6f376-bb75-4e86-bbe0-88c48d6a76d8",
+        "19dc7f32-b275-4caf-b3f4-d0273a69ba33",
+        "a54eb32c-7798-4c2f-b10f-9009c1fe6d31",
+        "79cc39d5-8c0d-491c-b0dd-70c6d0213220",
+        "926a7e53-581f-4bfa-9728-ee14edb67da0",
+        "37202593-dbc1-4ba4-a290-6d8d255c210b",
+        "c005b257-4356-474f-88a5-958b2064271e",
+        "539f6334-85a2-455c-b88c-69f76347d931",
+        "ab969612-452e-4cde-a702-509c4235d0cc",
+        "8afe21c7-6b63-4dd1-8c84-c79f02f87dab",
+        "da7c8b36-507b-4ab3-bf6d-b7f42362ae90",
+        "59d0dbec-23d1-49be-96b8-e9247087f8f2",
+        "4f1e9786-f748-48ea-ada7-e4fb87b2ea29",
+        "fa1479e4-1485-4be9-9baf-eff377be254e",
+        "078d474c-9b55-4e2a-9903-5a228754227a"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Effects",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

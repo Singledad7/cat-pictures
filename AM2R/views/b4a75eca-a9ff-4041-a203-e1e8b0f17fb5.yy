@@ -1,0 +1,30 @@
+{
+    "id": "b4a75eca-a9ff-4041-a203-e1e8b0f17fb5",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "b4a75eca-a9ff-4041-a203-e1e8b0f17fb5",
+    "children": [
+        "e7957ade-3a8d-428a-85e6-16924ec26ed1",
+        "42dbccbc-38d0-48ff-b26d-e6b6e4f3c1e7",
+        "8f469a42-3e76-4f8e-9cdc-8599985af2f6",
+        "1c252ac7-94bc-433b-9fce-e32d859441a4",
+        "62e07e9b-9f27-4494-884f-983b3060ff91",
+        "aa448acb-a7bc-4b20-9474-cf347baa6ad0",
+        "16f29a51-4384-4850-8329-9b85b26a0edb",
+        "5b133569-18c1-4bd0-82ae-6d0cbe6532d2",
+        "5285d969-245e-420d-9c0b-0c104639e3d2",
+        "447433a3-8d69-40fd-afd0-29f72f5f84fb",
+        "92491b98-0739-4d58-93d4-b3cd19b64a7f",
+        "e6c0dcd7-f479-4cab-af35-91c95f003866",
+        "8b941696-c166-46bf-982b-7fe3043f9195",
+        "f3c20ab4-2081-4ed8-8ab3-ec0ceca84c83",
+        "2879e8d0-fa76-4afa-9a5d-bf46a824ce62",
+        "58887a29-7828-471f-a28d-35976fdb7f51",
+        "7ecb800d-07d6-422c-a72d-f9a0e35342d3",
+        "0d6b3f24-32a7-4d99-8daa-9dca936e8277"
+    ],
+    "filterType": "GMSound",
+    "folderName": "Step",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

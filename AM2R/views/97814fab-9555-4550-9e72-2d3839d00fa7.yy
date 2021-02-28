@@ -1,0 +1,33 @@
+{
+    "id": "97814fab-9555-4550-9e72-2d3839d00fa7",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "97814fab-9555-4550-9e72-2d3839d00fa7",
+    "children": [
+        "c886cc6a-9413-4275-ab47-26b92fb69319",
+        "e5fed0b8-6624-4391-adef-4eaf318ef398",
+        "e6814a02-fb9e-44d3-bb6d-2fd54e91f0b4",
+        "4f35e3e3-0f6f-496c-9769-bfd9a33a8b3e",
+        "b2d44f5e-3fbd-451f-bf8e-008c7d8a7df7",
+        "7e0cbe5b-6a3e-4d34-83b3-084703cec7b8",
+        "cf082396-42ce-4110-883d-6fd7167c6587",
+        "ae27adef-8f6f-43e1-998f-e5512307798d",
+        "d9de79df-62ff-49e3-9207-78f20a8d3a69",
+        "fcca4621-388d-4ec5-984e-be6b78e22d7c",
+        "8b4d8297-21ec-40c2-b811-323122a0577b",
+        "85bbf1e2-5f50-4115-b2fe-ff5acc15600d",
+        "a6e3d854-bc9c-4abf-8cab-1ab2c694620e",
+        "51fc4e8f-2e92-4183-851d-67f76187c7fb",
+        "40c4a745-abf9-47ab-a155-060dd1602f01",
+        "fab10d15-e6c8-4193-af56-9e97f9927934",
+        "3825ad5f-9c42-44d1-b956-67e898aa149d",
+        "f5e680af-4fdf-4ed0-bc50-46d9ff53d14c",
+        "a72614df-118d-4c48-b193-c5b8f8187cff",
+        "402b664f-2be0-4868-9541-d3f003628109",
+        "c784eeee-bbcd-4a8c-a0f1-82aa482d51fd"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Arachnus",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

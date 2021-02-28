@@ -1,0 +1,3 @@
+// Original Monster
+myid = 48;
+if (global.metdead[myid] > 0) instance_destroy();

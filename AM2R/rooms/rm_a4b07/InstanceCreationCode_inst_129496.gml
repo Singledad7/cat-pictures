@@ -1,0 +1,9 @@
+targetroom = rm_a4b05;
+targetx = 432; //80+320+48+16;
+targety = 32;
+height = 64;
+direction = 270;
+camstartx = 320+32;
+camstarty = 16;
+transitionx = 86+48+16+8;
+transitiony = 4;

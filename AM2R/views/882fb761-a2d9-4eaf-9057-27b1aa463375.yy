@@ -1,0 +1,31 @@
+{
+    "id": "882fb761-a2d9-4eaf-9057-27b1aa463375",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "882fb761-a2d9-4eaf-9057-27b1aa463375",
+    "children": [
+        "3adfd089-871c-4ca8-9464-3d9c39e31113",
+        "8840aa1a-d435-49ed-9bf2-23357e640ff5",
+        "d68bb9e5-96e1-4042-90f1-1fbd29df29b7",
+        "c9d03542-9d04-467c-833c-a374f451cfef",
+        "98f70a04-1217-4ec6-87a3-6b0081ba4a4a",
+        "ef68975f-1233-4ff8-8415-f3c5641bce85",
+        "b5d61c12-2a68-490b-9486-d2dc98556136",
+        "31184da1-7a4c-4e73-9bed-2c92d72ece24",
+        "1a68716e-5fef-4f80-99c5-7d68a59aedc8",
+        "2852f2a3-e618-46a9-95bf-669ffa062ae5",
+        "926653ca-7dd8-44e6-b902-be7c6aa8f4f8",
+        "1ba59502-af7c-49cd-8295-41521d4ac71c",
+        "e61e4243-4221-407e-afa5-b8be705b12f1",
+        "3439d116-4dfd-485c-a5fb-675a539798a5",
+        "28712efd-8dc8-453b-9e24-b527fff29513",
+        "100a9974-97f5-4126-9b55-a0ddd678addd",
+        "f345d9dd-b8b9-4956-ae09-9f68945e3a1f",
+        "d31536be-6ee6-447b-b514-ab53355a7188",
+        "fff3990d-1d7e-4777-8dad-da5b3f0b7cd4"
+    ],
+    "filterType": "GMObject",
+    "folderName": "Gatordile",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

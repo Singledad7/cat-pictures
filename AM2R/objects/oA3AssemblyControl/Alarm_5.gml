@@ -1,0 +1,2 @@
+sfx_loop(sndALLaserLoop);
+

@@ -1,0 +1,2 @@
+//oGameSelMenu.active = 1;
+

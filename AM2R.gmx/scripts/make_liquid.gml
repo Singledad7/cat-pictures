@@ -1,4 +1,4 @@
-/// make_liquid(type, level, unknown, wave?, wspeed, wheight, layer)
+/// make_liquid(type, level, unknown, wave?, wspeed, wheight, lmask)
 global.watertype = argument0;
 global.waterlevel = argument1;
 if (argument0 == 0) {

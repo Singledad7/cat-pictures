@@ -1,0 +1,16 @@
+global.mapoffsetx = 35;
+global.mapoffsety = 47;
+global.waterlevel = 0;
+global.watertype = 0;
+global.floormaterial = 4;
+make_escape_sequence_fx(2);
+if (global.event[203] > 0) with (oA4EscapeControl) {
+    gototemp = 50;
+    alarm[0] = 1;
+}
+
+if (global.item[0] == 0 && ((global.ptanks == 0) || (global.ptanks == 1 && global.event[203] > 0 && global.event[203] < 9)))
+{
+with inst_130019 instance_destroy();
+with inst_130021 instance_destroy();
+}

@@ -1,0 +1,33 @@
+{
+    "id": "55912097-5dea-4ca2-92a7-8883f0ab99cd",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "55912097-5dea-4ca2-92a7-8883f0ab99cd",
+    "children": [
+        "ae0067a8-a1ea-4692-81fd-43290c4232da",
+        "f35ed60c-577d-443f-8f20-d956e9884d5b",
+        "32dd91dc-a13b-407a-8694-8abe88cdef79",
+        "0de5dba9-f179-4de1-906b-f1433d4db120",
+        "a2bb1d03-16e5-47a4-8632-3c9107eb00c2",
+        "2aac331d-89a2-45be-9321-fe0037bbbaa6",
+        "1d84e367-0b52-49b2-8eba-f471fe030255",
+        "4a6253e5-fc8e-4010-a1d9-948e2ff5c561",
+        "82a22e2c-048a-42ec-baf0-afddea95994d",
+        "7a326306-eb97-4183-a6f1-9bd194fa09d7",
+        "a5bf8bfb-f83a-478b-9181-13611929ff72",
+        "7dc431c1-dc1f-45e6-b857-41eba7f06731",
+        "67c3e5fc-461c-45cd-bc0d-952f6d475a95",
+        "9d428008-f5f4-4261-a358-2739b69017bf",
+        "71bd017a-f1ee-4c8f-a7ce-ebd19812c835",
+        "2b6b0357-e44e-4314-a8ea-0b09ee06824e",
+        "57009ea2-8987-4f50-a709-25ccf951f494",
+        "f22012c9-f331-406b-aa48-87436a83d014",
+        "e0dcec8a-ba17-4e5a-804b-d6a9fc7b3f1b",
+        "4c42b1c5-3f01-4e66-a542-8a28932b1583",
+        "1247c3af-c582-4209-afde-84a0c087838a"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "A3",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

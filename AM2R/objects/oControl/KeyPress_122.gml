@@ -1,0 +1,2 @@
+showfps = !showfps;
+

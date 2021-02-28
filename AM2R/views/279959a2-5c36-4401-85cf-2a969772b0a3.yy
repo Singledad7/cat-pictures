@@ -1,0 +1,32 @@
+{
+    "id": "279959a2-5c36-4401-85cf-2a969772b0a3",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "279959a2-5c36-4401-85cf-2a969772b0a3",
+    "children": [
+        "f1753fea-deb4-4771-890a-32bb2b50147d",
+        "37f2d40d-f224-4987-a54b-e221aa5900b2",
+        "f270b1ea-99e2-404a-9926-bacbe0d8e9d1",
+        "93d09fa3-83f2-4b4a-9a5c-4cd410f2bc45",
+        "592cb1bc-449d-4d1f-8e57-f24f219ddbe5",
+        "92101e78-3373-4f75-8590-6164bb568130",
+        "db602749-7b6f-4263-8fe9-3a1a950030ca",
+        "167bfac2-427c-4303-98db-c439e8beab5a",
+        "c656d141-a92a-4450-b546-0a05e648aa1b",
+        "c460c887-15b8-4596-a28b-ebe3afd81f34",
+        "8065dbc0-c024-44cc-8fcf-e41d74cdf062",
+        "656bee59-4d2d-4c17-91ad-0d56ae249567",
+        "7ec197ee-d3ea-4d12-a333-9c7052467bbc",
+        "ac696322-5124-4205-ab84-d84ca8c926ba",
+        "5590d6f0-3ff7-43ff-b00f-9bafa40f4408",
+        "db026f6f-7721-4652-932f-8575fd7eaf0f",
+        "370d3eef-b8cf-463a-800a-dde2c1da3b52",
+        "586e0b1f-f1e5-42d9-a2d8-d243cf8b3100",
+        "5c236637-1bc4-4493-aa92-7edbc522621e",
+        "d96891b7-2ff3-4ced-af78-b39d8c409c60"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Android",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

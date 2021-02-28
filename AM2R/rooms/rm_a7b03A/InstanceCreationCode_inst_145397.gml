@@ -1,0 +1,9 @@
+targetroom = rm_a7b04A;
+targetx = 624;
+targety = 128;
+height = 64;
+direction = 180;
+camstartx = 624; // whoopsies
+camstarty = 120;
+transitionx = 316;
+transitiony = 128;
