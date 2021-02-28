@@ -5053,6 +5053,7 @@
       <script>scripts\is_mustester_present.gml</script>
       <script>scripts\is_musitemamb2_present.gml</script>
       <script>scripts\is_musqueen_present.gml</script>
+      <script>scripts\nik_check_any_pad_button.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">

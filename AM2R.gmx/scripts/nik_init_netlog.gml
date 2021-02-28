@@ -6,6 +6,10 @@ if (!variable_global_exists("__nik_netlog_really_ready")) {
     is_nik_pc = (os_type == os_windows && os_version == _winnt10 && environment_get_variable("USERNAME") == "dieka" && environment_get_variable("NINTENDO_SDK_ROOT") == "D:\SDKs\Nintendo\Switch-9.2.0\NintendoSDK");
     
     var _url = "192.168.1.218";
+    if (string_length(url) > 0) {
+        _url = url;
+    }
+    
     if (is_nik_pc) {
         // this is my computer.
         _url = "127.0.0.1";
@@ -17,7 +21,6 @@ if (!variable_global_exists("__nik_netlog_really_ready")) {
     
     netlog_init(_url, 5101);
     global.__nik_netlog_really_ready = true;
-    once = false;
 }
 else {
     writelog("wtf? netlog is already loaded!");

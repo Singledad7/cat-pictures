@@ -674,6 +674,10 @@ for (var i = 0; i &lt; listSize; i++) {
 
 if (widescreen) {
     widescreen_space = 106;
+    if (320/240 == surface_get_width(widescreen_surface)/surface_get_height(widescreen_surface)) {
+        writelog("Fixing aspect ratio...");
+        surface_free(widescreen_surface);
+    }
 } else {
     widescreen_space = 0;
     //view_enabled[1] = false;
@@ -954,12 +958,11 @@ if (!keyboard_check_pressed(vk_f9) &amp;&amp; pressed_key) pressed_key = false;
             <string>if (global.ingame) {
     if (surface_exists(gui_surface)) {
         if (global.ingame &amp;&amp; displaygui &amp;&amp; room != rm_transition &amp;&amp; instance_exists(oCharacter)) {
-            var d = application_get_position();
             //draw_surface_ext(gui_surface, displayx - d[0], displayy - d[1], display_scale, display_scale, 0, -1, 1);
             /*if (!global.opfullscreen) {
                 draw_surface_ext(gui_surface, ((displayx - d[0])*abs(widescreen-1)) - floor((widescreen_space/2)*display_scale), displayy - d[1], display_scale, display_scale, 0, -1, 1);
             } else {*/
-                draw_surface_ext(gui_surface, (displayx - d[0]), displayy - d[1], display_scale, display_scale, 0, -1, 1);
+                draw_surface_ext(gui_surface, displayx, displayy, display_scale, display_scale, 0, -1, 1);
             
             //}
         }

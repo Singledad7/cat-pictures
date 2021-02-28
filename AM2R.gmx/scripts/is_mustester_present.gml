@@ -1,2 +1,2 @@
 ///is_mustester_present()
-return false;
+return true;

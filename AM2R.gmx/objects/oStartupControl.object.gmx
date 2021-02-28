@@ -39,7 +39,6 @@ enum LOADER_STATE {
     SAVING         // flushing savedata
 };
 
-nik_init_netlog();
 global.path_sep = "/";
 if (os_type == os_windows || os_type == os_winphone || os_type == os_uwp || os_type == os_win8native) {
     global.path_sep = "\";
@@ -49,6 +48,8 @@ global.crlf = chr(13) + chr(10); // 0d0a windows crlf.
 state = LOADER_STATE.NOTHING;
 bufmap = ds_map_create();
 strmap = ds_map_create();
+
+// inis
 modifiers = "";
 fontsizes = "";
 configsav = "";
@@ -57,10 +58,41 @@ palettesm = "";
 opid = -1;
 retry = false;
 start = false;
-loadmsg = "hi, privet, guten tag, please DON'T mention this port#on AM2R sites (reddit/discord)##";
+loadmsg = "hi, privet, guten tag, please DON'T mention this port#on AM2R sites (reddit/discord)#press any button to setup netlog#";
 
 pads = array_create(gamepad_get_device_count());
 pad = 0;
+msg = -1;
+url = "";
+
+once = false;
+alarm[1] = 5*room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///start the game anyway.
+
+loadmsg += "#netlog skipped#";
+modifiers_async_init();
 </string>
           </argument>
         </arguments>
@@ -116,6 +148,35 @@ if (retry &amp;&amp; state == LOADER_STATE.NOTHING &amp;&amp; room != room_first
 }
 
 global.gamepadIndex = pad;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///netlog setup.
+
+if (msg != -1) alarm[1]++;
+
+if (!once &amp;&amp; room == room_first &amp;&amp; alarm[1] &gt; 0 &amp;&amp; nik_check_any_pad_button()) {
+    msg = get_string_async("Enter netlog url:", "192.168.1.100");
+}
 </string>
           </argument>
         </arguments>
@@ -240,7 +301,7 @@ if (_id == opid) {
             buffer_delete(_b);
             ds_map_clear(bufmap);
             configsav = _s;
-            loadmsg += "config.ini#";
+            loadmsg += "loaded savedata/config.ini#";
             language_async_init();
             break;
         }
@@ -252,7 +313,7 @@ if (_id == opid) {
             buffer_delete(_b);
             ds_map_clear(bufmap);
             init_languages(_s);
-            loadmsg += "languages.txt#";
+            loadmsg += "loaded languages.txt#";
             break;
         }
         
@@ -293,9 +354,9 @@ if (_id == opid) {
                  buffer_delete(_v);
             }
             ds_map_clear(bufmap);
-            alarm[0] = 5*room_speed;
+            alarm[0] = 2*room_speed;
             state = LOADER_STATE.NOTHING;
-            loadmsg += "will start the game...";
+            loadmsg += "#done.";
             break;
         }
         
@@ -349,6 +410,44 @@ netlog_async_net();
 if (!once) {
     once = true;
     modifiers_async_init();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="63">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///check netlog url.
+
+if (async_load[? "id"] == msg) {
+    msg = -1;
+    alarm[1] = -1;
+    if (async_load[? "status"] == true &amp;&amp; string_length(async_load[? "result"]) &gt; 1) {
+        var _url = async_load[? "result"];
+        loadmsg += "url: " + _url + "#";
+        url = _url;
+        nik_init_netlog();
+    }
+    else {
+        writelog("wrong input");
+        alarm[1] = 1;
+    }
 }
 </string>
           </argument>
