@@ -1,5 +1,5 @@
 # cat-pictures
-I told you. You didn't listen. That's your fault.
-This repo is not for you.
 
-https://www.youtube.com/watch?v=boMaTNuYTyg
+This repo is now public for everyone. Forever.
+
+Feel free to do whatever you want, let's be realistic, I'm not your father, I'm not your parents, I can't stop you anyway even if I wanted to.
